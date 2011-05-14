@@ -7,6 +7,6 @@
 <asp:Content ID="aboutContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2>About</h2>
     <p>
-        MIX11 Demo!
+        You can find the source for this on http://github.com/simonguest
     </p>
 </asp:Content>

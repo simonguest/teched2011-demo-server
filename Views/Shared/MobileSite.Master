@@ -7,13 +7,22 @@
     <link href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" rel="stylesheet" />
     <script src="http://code.jquery.com/jquery-1.5.min.js" type="text/javascript"></script>
     <script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <script type="text/javascript">
+
+      function onBodyLoad() {
+          // Hide the address bar
+          window.scrollTo(0, 1);
+      }
+      
+    </script> 
 </head>
 
 <body>
     <div data-role="page" data-theme="b">
 
         <div data-role="header">
-             <h1>TechEd 2011!</h1>
+             <h1>TechEd 2011</h1>
         </div>
         <div data-role="content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server" />

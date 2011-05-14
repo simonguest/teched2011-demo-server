@@ -13,7 +13,7 @@ namespace TechEdDemoMVC.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Welcome to my TechEd 2011 Demo";
+            ViewBag.Message = "Welcome to TechEd!";
 
             return View();
         }

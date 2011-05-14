@@ -43,9 +43,12 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.Data.Services.Client" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
@@ -120,17 +123,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SessionModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\SessionSummary.cs" />
     <Compile Include="Models\Speaker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ISessionService.cs" />
+    <Compile Include="Services\ISOAP.cs" />
+    <Compile Include="Services\ODATA.svc.cs">
+      <DependentUpon>ODATA.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SessionService.cs" />
+    <Compile Include="Services\SOAP.svc.cs">
+      <DependentUpon>SOAP.svc</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\SampleData.mdf" />
-    <Content Include="App_Data\SampleData_log.ldf">
-      <DependentUpon>SampleData.mdf</DependentUpon>
-    </Content>
     <Content Include="Global.asax" />
     <Content Include="Models\SessionModel.edmx.sql" />
     <Content Include="Scripts\phonegap.0.9.4.min.js" />
+    <Content Include="Services\ODATA.svc" />
+    <Content Include="Services\REST.svc" />
+    <Content Include="Services\SOAP.svc" />
     <Content Include="Views\Home\Mobile\iPhone\About.aspx" />
     <Content Include="Views\Home\Mobile\iPhone\Index.aspx" />
     <Content Include="Views\Session\Details.aspx" />
@@ -192,7 +204,7 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Services\" />
+    <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="Models\SessionModel.edmx">
@@ -218,11 +230,11 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>53605</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/MIX11DemoMVC</IISUrl>
+          <IISUrl>http://localhost/TechEdDemoMVC</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
