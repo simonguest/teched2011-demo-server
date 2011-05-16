@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/MobileSite.Master" Inherits="System.Web.Mvc.ViewPage<TechEdDemoMVC.Models.Session>" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/iPhone.Master" Inherits="System.Web.Mvc.ViewPage<TechEdDemoMVC.Models.Session>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
     Details

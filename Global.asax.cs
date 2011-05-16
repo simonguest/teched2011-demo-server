@@ -38,7 +38,7 @@ namespace TechEdDemoMVC
 
             ViewEngines.Engines.Clear();
             ViewEngines.Engines.AddMobile<WebFormViewEngine>("iPhone", @"Mobile\iPhone");
-            ViewEngines.Engines.AddMobile<WebFormViewEngine>("Android", @"Mobile\iPhone"); 
+            ViewEngines.Engines.AddMobile<WebFormViewEngine>("Android", @"Mobile\Android"); 
             ViewEngines.Engines.Add(new WebFormViewEngine());
 
 

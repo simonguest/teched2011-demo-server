@@ -143,11 +143,15 @@
     <Content Include="Services\ODATA.svc" />
     <Content Include="Services\REST.svc" />
     <Content Include="Services\SOAP.svc" />
+    <Content Include="Views\Home\Mobile\Android\About.aspx" />
+    <Content Include="Views\Home\Mobile\Android\Index.aspx" />
     <Content Include="Views\Home\Mobile\iPhone\About.aspx" />
     <Content Include="Views\Home\Mobile\iPhone\Index.aspx" />
     <Content Include="Views\Session\Details.aspx" />
     <Content Include="Views\Session\Edit.aspx" />
     <Content Include="Views\Session\Index.aspx" />
+    <Content Include="Views\Session\Mobile\Android\Details.aspx" />
+    <Content Include="Views\Session\Mobile\Android\Index.aspx" />
     <Content Include="Views\Session\Mobile\iPhone\Details.aspx" />
     <Content Include="Views\Session\Mobile\iPhone\Index.aspx" />
     <Content Include="Web.config">
@@ -213,7 +217,10 @@
     </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\MobileSite.Master" />
+    <Content Include="Views\Shared\iPhone.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Android.Master" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
